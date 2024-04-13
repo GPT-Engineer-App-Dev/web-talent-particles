@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, HStack, Image, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, HStack, Image, Stack, Text, VStack, Link } from "@chakra-ui/react";
 import { FaSearch, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
                 Find Top Software Talent
               </Heading>
               <Text fontSize="xl">Particles is a marketplace to find skilled software developers specializing in web technologies like React, Node, .NET, Go, and JavaScript.</Text>
-              <Button colorScheme="blue" size="lg" rightIcon={<FaSearch />}>
+              <Button as={Link} to="/developers" colorScheme="blue" size="lg" rightIcon={<FaSearch />}>
                 Browse Developers
               </Button>
             </VStack>
